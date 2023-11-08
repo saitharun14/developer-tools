@@ -22,7 +22,7 @@
 		/>
 	{:else}
 		<textarea
-			placeholder="Enter the text....."
+			placeholder=""
 			spellcheck="false"
 			bind:value={outputText}
 			name="output"
