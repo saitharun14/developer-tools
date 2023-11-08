@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-3xl font-normal leading-normal;
+	}
+	h2 {
+		@apply text-2xl font-normal leading-normal;
+	}
+	h3 {
+		@apply text-lg font-normal leading-normal;
+	}
+	body {
+		@apply bg-[#0F172B] text-[#94A2B8];
+	}
+}
