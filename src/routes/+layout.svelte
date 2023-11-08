@@ -46,9 +46,9 @@
 		<a on:click={handleSidebarClick} href="/tools/url-parser" type="button" class="font-semibold"
 			>Url Parser</a
 		>
-		<a on:click={handleSidebarClick} href="/tools/diff-viewer" type="button" class="font-semibold"
+		<!-- <a on:click={handleSidebarClick} href="/tools/diff-viewer" type="button" class="font-semibold"
 			>Diff Viewer</a
-		>
+		> -->
 		<a
 			on:click={handleSidebarClick}
 			href="/tools/number-converter"
