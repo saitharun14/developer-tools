@@ -6,6 +6,7 @@
 	export let showWarning = false;
 	export let isReadonly = true;
 	export let handleInput = () => {};
+	export let haveCopyBtn = true;
 </script>
 
 <div class="relative">
@@ -26,11 +27,19 @@
 				bind:value
 				on:input={handleInput}
 			/>
-			<button
-				type="button"
-				class="bg-blue-400 text-white px-[14px] py-2 font-semibold rounded-md"
-				on:click={() => onClickCopy(value)}>Copy</button
-			>
+			{#if haveCopyBtn}
+				<button
+					type="button"
+					class="bg-blue-400 text-white px-[14px] py-2 font-semibold rounded-md"
+					on:click={() => onClickCopy(value)}>Copy</button
+				>
+			{:else}
+				<button
+					type="button"
+					on:click={() => (value = '')}
+					class="bg-blue-400 text-white px-[14px] py-2 font-semibold rounded-md">clear</button
+				>
+			{/if}
 		</div>
 	</div>
 	{#if showWarning === true}
