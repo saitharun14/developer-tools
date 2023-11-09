@@ -26,7 +26,7 @@
 				const temp = parseInt(inputValue, methodsObj[inputOption]);
 				outputValue = temp.toString(methodsObj[outputOption]).toUpperCase();
 			} else notValidInput = true;
-		}
+		} else outputValue = '';
 	}
 </script>
 
@@ -37,6 +37,7 @@
 			label={'Input'}
 			isReadonly={false}
 			bind:showWarning={notValidInput}
+			haveCopyBtn={false}
 		>
 			<select name="Input-selection" id="Input-selection" bind:value={inputOption} slot="options">
 				<option value="decimal" selected>Decimal</option>
