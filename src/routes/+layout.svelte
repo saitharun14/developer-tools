@@ -55,6 +55,12 @@
 			type="button"
 			class="font-semibold">Number Converter</a
 		>
+		<a
+			on:click={handleSidebarClick}
+			href="/tools/unix-converter"
+			type="button"
+			class="font-semibold">Unix Time / Date Converter</a
+		>
 	</section>
 	<div>
 		<slot />
