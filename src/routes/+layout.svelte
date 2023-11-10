@@ -59,7 +59,7 @@
 			on:click={handleSidebarClick}
 			href="/tools/unix-converter"
 			type="button"
-			class="font-semibold">Unix Time Converter</a
+			class="font-semibold">Unix Time / Date Converter</a
 		>
 	</section>
 	<div>
